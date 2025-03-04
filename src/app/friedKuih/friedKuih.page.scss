@@ -1,0 +1,189 @@
+/* Header Styling */
+.header {
+    background: transparent;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow: hidden;
+  }
+  
+  .toolbar {
+    background: linear-gradient(to right, #ffd089, #ffe6c1);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 8px 10px; /* Balanced padding */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center; /* Vertically center all content */
+    height: 70px; /* Ensure consistent header height */
+  }
+  
+  /* Logo Styling */
+  .logo {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  
+  /* Brand Name Styling */
+  .brand-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #6d3d14;
+  }
+  
+  /* App Container */
+  .app-container {
+    display: flex;
+    height: 100%;
+  }
+  .side-nav {
+    width: 90px;
+    background-color: #ffffff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    display: flex;
+  
+  
+    ion-list {
+      padding: 0;
+      margin: 0;
+      width: 100%;
+  
+      ion-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+        border-radius: 15px;
+  
+        ion-label {
+          font-size: 10px;
+          color: #333;
+        }
+      }
+    }
+  }
+  
+  .content-area {
+    flex-grow: 1; /* Allows content area to expand */
+    overflow: auto; /* Ensures content can scroll if needed */
+    padding: 10px;
+  }
+  
+  /* Image Grid - Card Style */
+  /* Card Wrapper - Square Shape */
+  .square-card {
+    width: 100%;
+    height: 150%;
+    padding-top: 100%; /* Creates a square by maintaining a 1:1 aspect ratio */
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .square-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Image Styling - Fit Inside Square */
+  .square-card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Image takes 70% of the square */
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  
+  .square-card ion-card-content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40%; /* Content takes 30% of the square */
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    text-align: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  
+  /* Card Title Styling */
+  ion-card-title {
+    font-size: 8px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+    text-transform: capitalize;
+  }
+  
+  #chineseName{
+    font-size: 8px;
+  }
+  
+  #price{
+    font-size: 8px;
+  }
+  
+    /* Footer Styling */
+  /* Footer Styling */
+  .footer {
+    background: linear-gradient(to right, #ffd089, #ffe6c1);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    padding: 5px 0; /* Reduced padding */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  p{
+    font-size: 12px;
+  }
+    
+    /* Footer Container */
+    .footer-container {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      position: relative;
+      align-items: center;
+    }
+    
+    /* Footer Buttons */
+    .footer-btn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: white;
+    }
+    
+    /* Center Button Bridge Effect */
+    .footer-bridge {
+      position: absolute;
+      bottom: 2px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: white;
+      border-radius: 50%;
+      padding: 6px;
+      box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .center-btn {
+      width: 70px;
+      height: 70px;
+      background: #f8bd8d;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    

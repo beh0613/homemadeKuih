@@ -1,0 +1,13 @@
+{
+  "name": "tabs",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone",
+  "proxies": [
+    {
+      "path": "/api",
+      "proxyUrl": "https://triptact.infinityfreeapp.com"
+    }
+  ]
+}

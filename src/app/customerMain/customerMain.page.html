@@ -1,0 +1,78 @@
+<ion-header class="header">
+  <ion-toolbar class="toolbar">
+    <ion-title class="header-title">
+      <img src="assets/logo.webp" alt="Logo" class="logo"> 
+      <span class="brand-name">Cindy's Homemade Kuih</span>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="app-container">
+        <!-- Left Navigation Bar -->
+        <aside class="side-nav">
+          <ion-list>
+            <ion-item button (click)="navigateTo('customerMain')">
+              <ion-label>Nyonya</ion-label>
+            </ion-item>
+            
+            <ion-item button (click)="navigateTo('friedKuih')">
+              <ion-label>Fried</ion-label>
+            </ion-item>
+            <ion-item button>
+              <ion-label>Cake</ion-label>
+            </ion-item>
+            <ion-item button>
+              <ion-label>Biscuit</ion-label>
+            </ion-item>
+            <ion-item button>
+              <ion-label>Drink Powder</ion-label>
+            </ion-item>
+          </ion-list>
+        </aside>
+  
+
+    <!-- Main Content -->
+    <div class="content-area">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="6" *ngFor="let kuih of kuihs">
+            <ion-card>
+              <!-- Image Container -->
+              <div class="square-card">
+                <img src="{{ kuih.image }}" alt="{{ kuih.steamkuih_engName }}">
+              </div>
+      
+              <!-- Content BELOW Image -->
+              <ion-card-content class="kuih-card-content">
+                <ion-card-title>{{ kuih.steamkuih_engName }}</ion-card-title>
+                <p id="chineseName">{{ kuih.steamkuih_chineseName }}</p>
+                <p id="price">Price: RM {{ kuih.steamkuih_price }}</p>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      
+    </div>
+  </div>
+</ion-content>
+
+<!-- Footer -->
+<ion-footer class="footer">
+  <div class="footer-container">
+    <ion-button fill="clear" class="footer-btn">
+      <p>Home</p>
+    </ion-button>
+    
+    <div class="footer-bridge">
+      <ion-button fill="clear" class="footer-btn center-btn">
+        <p>Menu</p>
+      </ion-button>
+    </div>
+
+    <ion-button fill="clear" class="footer-btn">
+      <p>Profile</p>
+    </ion-button>
+  </div>
+</ion-footer>
